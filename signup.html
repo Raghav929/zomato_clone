@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body >
+    <div class="wrapper">
+    <form>
+        <h1>signup</h1><br>
+    <label for="name"> Name :</label>
+    <input type="text" id="name" name="fname" required>
+    <br><br>
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password" required><br><br>
+    <label for="email" >E-mail ID :</label>
+    <input type="email" id="email" name="email" required >
+    <br><br>
+    <label for="phone">Phone Number :</label>
+    <input type="tel" id="phone" name="contact" required>
+    <br><br>
+    <label >Gender :</label>
+    <input type="radio"  id="male" name="Gender" value="male">
+    <label for="male">male</label>
+    <input type="radio"  id="female" name="Gender" value="female">
+    <label for="female">female</label>
+    <input type="radio"  id="others" name="Gender" value="other">
+    <label for="others">other</label>
+    <br><br>
+    <label for="date">D.O.B :</label>
+    <input type="date" id="date"> <br><br>
+    <label for="dep">Places :</label>
+    <select name="Places" id="dep"required >
+        <option value=""disabled selected>select your Places</option>
+        <option value="Delhi NCR">Delhi NCR</option>
+        <option value="Noida">Noida</option>
+        <option value="Amroha">Amroha</option>
+        <option value="Joya">Joya</option>
+    </select>
+    <br><br><br>
+    <div class="third">
+<p>Address :</p>
+    <textarea name="adress" id="adress" rows="2" cols="20"></textarea><br><br> </div>
+                <button type="submit" class="button">sign_up</button>
+    </form>
+    </div>
+</body>
+</html>

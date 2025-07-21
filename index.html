@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <style>
+       .img{
+        pointer-events:none;
+    }
+    </style>
+<link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="./style copy.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="first">
+                <div class="brand box">
+                    <h1>zomato</h1>
+                </div>
+                <div class="search box">
+                    <form >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="searching" placeholder= "search for restaurant,cuisine or a dish" style="border-radius: 50px; height: 50px; width: 600px;">
+                    </form>
+                </div>
+                <div class="login box">
+                    <button  style="margin-left: 50px;"><a href="login.html" style="color:rgb(101, 97, 97); text-decoration: none; " >Log in</a></button>
+                </div>
+                <div class="sign box">
+                    <button>
+                      <a href="signup.html" style="color: rgb(101, 97, 97); text-decoration: none;">  sign up</a>
+                    </button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="dining  box">
+                    <div class="small-image box ">
+                        <img src="./dining.jpg" alt="dining" class="img3">
+                    </div>
+                    <div class="dine  box" >
+                        <h2 >Dining out</h2>
+                    </div>
+                </div>
+                    <div class="delivery box">
+                        <div class="small-image box ">
+                            <img src="./delivery.jpg" alt="dining" class="img3">
+                        </div>
+                        <div class="dine  box" >
+                            <h2 >Delivery</h2>
+                        </div>
+                    </div>
+                    <div class="nightlife box">
+                        <div class="small-image box ">
+                            <img src="./nightlife.jpg" alt="dining" class="img3">
+                        </div>
+                        <div class="dine  box" >
+                            <h2 >Nightlife</h2>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="third">
+                <div class="cset">
+                <h3 style="font-size: 30px;" id="g">collections</h3> <br><br><br>
+                <p style="font-size:25px;">Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p> </div>
+                <div class="col1">
+                    <!--image-->
+                    <div class="outer">
+                        <div class="s1">
+                        <img src="./source.avif" alt="" class="out"></div>
+<div class="set"><p>Top trending spots <br>
+                        38 places</p></div>
+
+                    </div>
+                    <div class="outer">
+                        <div class="s1">
+                        <img src="./out2.avif" alt="" class="out"></div>
+<div class="set"><p>Best insta-worthy places <br>
+                        42 places</p></div>
+
+                    </div>
+                    <div class="outer">
+                        <div class="s1">
+                        <img src="./out3.avif" alt="" class="out"></div>
+<div class="set"><p>Haunting Halloween Parties <br>
+                        28 places</p></div>
+
+                    </div>
+                    <div class="outer">
+                        <div class="s1">
+                        <img src="./out4.avif" alt="" class="out"></div>
+<div class="set"><p>Dazzling Diwali Celebraties <br>
+                        29 places</p></div>
+
+                    </div>
+              
+                   
+            </div>
+           
+        </div>
+        
+    </header>
+    <main id="postion"  >
+         <div id="head" style="position: sticky; top: 0px; /* Adjust according to the height of your header */
+    
+z-index: 9999; background-color: white;
+ width: 100%;  " >
+ <div id="mar" style="margin-left: 50px; ">
+        
+    <button id="Filters" class="but" style="margin: 30px;">Filters</button>
+    <button id="Offers" class="but" style="margin: 30px;">Offers</button>
+    <button id="Rating" class="but" style="margin: 30px;">Rating 4.5+</button>
+    <button id="Alcohol" style="width: 150px; margin: 30px;"  class="but"> Serves Alcohol </button>
+    <button id="Open" class="but" style="margin: 30px;">Open Now</button>
+
+    </div>
+
+    </div>
+
+
+<!-- Filter Popup -->
+<div id="filterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h3>Choose Filter</h3><br>
+        
+        <!-- Radio Buttons for Sorting Options -->
+        <form id="filterForm">
+            <label>
+                <input type="radio" name="filter" value="rating"> Sort by Rating
+            </label><br>
+
+            <label>
+                <input type="radio" name="filter" value="priceHighToLow"> High to Low (Price)
+            </label><br>
+
+            <label>
+                <input type="radio" name="filter" value="priceLowToHigh"> Low to High (Price)
+            </label><br>
+
+            <label>
+                <input type="radio" name="filter" value="distance"> Sort by Distance
+            </label><br><br>
+
+            <!-- Apply and Close Buttons -->
+            <button type="button" id="applyBtn">Apply</button>
+            <button type="button" id="closeBtn2">Close</button>
+        </form>
+    </div>
+</div>
+
+       <div class="se">
+        <img src="./50 .jpg" alt="img" class="s" style="padding-top: 10px;padding-bottom: 20px; margin-left: 50px;">
+       </div>
+       <h2 style="font-size: 30px;padding-top: 10px; padding-bottom: 20px;" ><ul >Best food in Delhi NCR</ul></h2>
+    </div>
+    <!--insert all the card here --->
+    <div id="root">
+        
+    </div>
+     <div style="text-align: center; margin: 20px;">
+      <button id="showMoreBtn">Show More</button>
+    </div>
+
+<script src="./aap.js"></script>
+            
+    </main>
+    <footer>
+        <p style="font-size: large; margin-left: 100px; display: inline;">&copy;All right reserved by <h1 style="display: inline-block;">zomato</h1></p>
+    
+           </footer>
+   
+        
+
+        
+</body>
+                
+           
+</html>
